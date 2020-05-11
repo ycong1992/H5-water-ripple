@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>扩散特效</title>
+<style>
+.circleBox{
+width: 20px;
+height:20px;
+margin:auto;
+}
+.circle1,.circle2,.circle3,.circle4{
+width: 20px;
+height:20px;
+border-radius:50%;
+position:absolute ;
+top:20%;
+background-color:rgba(18, 196, 109,1);
+}
+.circle1{
+animation: calling 3s linear 0s infinite;
+-moz-animation: calling 3s linear 0s infinite; /* Firefox */
+-webkit-animation: calling 3s linear 0s infinite; /* Safari 和 Chrome */
+-o-animation: calling 3s linear 0s infinite; /* Opera */
+}
+.circle2{
+animation: calling 3s linear 1s infinite;
+-moz-animation: calling 3s linear 1s infinite; /* Firefox */
+-webkit-animation: calling 3s linear 1s infinite; /* Safari 和 Chrome */
+-o-animation:calling 3s linear 1s infinite; /* Opera */
+}
+.circle3{
+animation: calling 3s linear 2s infinite;
+-moz-animation: calling 3s linear 2s infinite; /* Firefox */
+-webkit-animation: calling 3s linear 2s infinite; /* Safari 和 Chrome */
+-o-animation: calling 3s linear 2s infinite; /* Opera */
+}
+@keyframes calling{
+0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity:1;
+}
+25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity:0.2;
+}
+50% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity:0.2;
+}
+75% {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    opacity:0.1;
+}
+100% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0.1;
+}
+}
+</style>
+</head>
+<body>
+    <div class="circleBox">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+</body>
+</html>
